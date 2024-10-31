@@ -38,7 +38,7 @@ printHelloWorld4("Matthew"); //now when we print we can add our name
 
 //function with parameters
 function printHelloWorld5(name1, name2, name3, name4, name5 ) {
-    console.log('Hello, ${name1}, ${name2}, ${name3}, ${name4}, and ${name5}'); //string interpolation example
+    console.log(`Hello, ${name1}, ${name2}, ${name3}, ${name4}, and ${name5}`); //string interpolation example
 }
 
 printHelloWorld5("Matthew", "Jonathan,", "Humberto", "Jerry", "Jovanni");
@@ -47,19 +47,20 @@ printHelloWorld5("Matthew", "Jonathan,", "Humberto", "Jerry", "Jovanni");
 let someVariable = "";
 console.log('hello, ' + someVariable); //single quotes
 console.log("hello, " + someVariable); //double quotes
-console.log(hello, ${someVariable}); // backticks with string interpolation
+console.log(`hello, ${someVariable}`); // backticks with string interpolation
 
 /*****************************************************************************************************/
 // function calling a function
 function printHelloWorld6() {
     console.log("This is printHelloWorld6");
 
+}
 function printHelloWorld7() {
     console.log("This is printHelloWorld7");
     printHelloWorld6(); // calling a function inside another function
 
     }
-}
+
 
 printHelloWorld7(); // prints both "This is printHelloWorld(7))" & "This is printHelloWorld6()"
 printHelloWorld6(); // prints just "This is printHelloWorld(6)"
